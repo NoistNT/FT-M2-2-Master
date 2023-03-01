@@ -1,1 +1,19 @@
-// Mixins acá
+.buttons() {
+  width: fit-content;
+  padding: .9rem;
+  border-radius: .57rem;
+  font-size: 1.3rem;
+}
+
+.btn {
+  .buttons();
+  background-color: @btn-bg-color;
+  color: @border-real;
+  transition-duration: 100ms;
+
+  &:hover {
+    background-color: salmon;
+    color: whitesmoke;
+    transition-duration: 100ms;
+  }
+}

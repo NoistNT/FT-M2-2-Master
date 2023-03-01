@@ -1,0 +1,325 @@
+.btn {
+  width: fit-content;
+  padding: 0.9rem;
+  border-radius: 0.57rem;
+  font-size: 1.3rem;
+  background-color: #22283A;
+  color: #dee2e6;
+  transition-duration: 100ms;
+}
+.btn:hover {
+  background-color: salmon;
+  color: whitesmoke;
+  transition-duration: 100ms;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar {
+  background-color: #F6F6F6;
+  border-color: #F1F1F1;
+  color: #454A59;
+  width: 100%;
+}
+.nav-bar .title {
+  font-size: 3.7rem;
+  padding: 2rem;
+  text-align: center;
+}
+.nav-bar .nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1.4rem;
+  max-width: 620px;
+  margin: auto;
+  margin-bottom: 0.6rem;
+}
+.nav-bar .nav-ul a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-ul a {
+    font-size: 1.65rem;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro .header-img {
+  border-radius: 1.9rem;
+  width: 98%;
+  margin: 1%;
+  margin-top: 0;
+}
+@media (max-width: 500px) {
+  .home .intro .header-img {
+    border-radius: 1rem;
+  }
+}
+.home .music-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .music-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .music-images .tecnologia,
+  .home .music-images .ondas {
+    display: none;
+  }
+  .home .music-images .auricular {
+    width: 100%;
+    margin: 3rem 0.5rem;
+  }
+}
+.home .musica-nueva {
+  padding: 15px;
+}
+.home .musica-nueva h3 {
+  margin-top: 11px;
+}
+.home .musica-nueva p {
+  margin-top: 13px;
+}
+.home .actual {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .actual .actual-text {
+  width: 50%;
+}
+.home .actual .actual-text h3 {
+  margin-bottom: 10px;
+}
+.home .actual .actual-text p {
+  margin-bottom: 26px;
+}
+.home .actual .actual-text .btn {
+  width: fit-content;
+  padding: 0.9rem;
+  border-radius: 0.57rem;
+  font-size: 1.3rem;
+}
+.home .actual .actual-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .actual .actual-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .actual {
+    flex-direction: column-reverse;
+    width: 98%;
+    padding: 1.5rem 0.5rem;
+    margin: auto;
+  }
+  .home .actual .actual-img {
+    margin: 0;
+    width: 100%;
+  }
+  .home .actual .actual-text {
+    width: 100%;
+  }
+  .home .actual .actual-text h3 {
+    margin-top: 1.5rem;
+  }
+  .home .actual .actual-text p {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .home .actual .actual-text .btn {
+    width: fit-content;
+    padding: 0.9rem;
+    border-radius: 0.57rem;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 1.7rem;
+  }
+}
