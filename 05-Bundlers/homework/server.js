@@ -1,45 +1,46 @@
-var path = require('path');
+const path = require('path')
 
-var http = require('http');
-var server = http.createServer();
+const http = require('http')
+const server = http.createServer()
 
-var express = require('express');
-var app = express();
+const express = require('express')
+const app = express()
 
-var socketio = require('socket.io');
+const socketio = require('socket.io')
 
-server.on('request', app);
+server.on('request', app)
 
-var io = socketio(server);
+const io = socketio(server)
 
-var inMemoryDrawHistory = [];
+const inMemoryDrawHistory = []
+
+const user = 'Ariel'
 
 server.listen(1337, function () {
-  console.log('The server is listening on port 1337!');
-});
+  console.log('The server is listening on port 1337!')
+})
 
-app.use(express.static(path.join(__dirname, 'browser')));
+app.use(express.static(path.join(__dirname, 'browser')))
 
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+  res.sendFile(path.join(__dirname, 'index.html'))
+})
 
 io.on('connection', function (socket) {
-  console.log(socket.id, 'connected');
+  console.log(user, 'connected')
 
-  socket.emit('load', inMemoryDrawHistory);
+  socket.emit('load', inMemoryDrawHistory)
 
   socket.on('draw', function (start, end, color) {
     inMemoryDrawHistory.push({
-      start: start,
-      end: end,
-      color: color
-    });
-    socket.broadcast.emit('draw', start, end, color);
-  });
+      start,
+      end,
+      color
+    })
+    socket.broadcast.emit('draw', start, end, color)
+  })
 
   socket.on('disconnect', function () {
-    console.log('Goodbye, ', socket.id, ' :(');
-  });
-});
-
+    console.log('Goodbye, ', user, ' :(')
+  })
+})
