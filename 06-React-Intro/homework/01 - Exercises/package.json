@@ -20,7 +20,10 @@
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "jest --verbose --detectOpenHandles",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "format": "prettier --write \"src/**/*.{js,jsx}\"",
+      "lint": "eslint \"src/**/*.{js,jsx}\"",
+      "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
    },
    "browserslist": {
       "production": [
@@ -35,6 +38,7 @@
       ]
    },
    "devDependencies": {
+      "prettier": "^2.8.4",
       "standard": "^17.0.0"
    },
    "standard": {
