@@ -1,20 +1,16 @@
-import React from 'react';
-
-
-const DivButtons = 'DivButtons'
-const Buttons = 'Buttons'
+import React from 'react'
+import { DivButtons, Buttons } from '../StyledComponents/StyledButton'
 
 export default class Botones extends React.Component {
-  render () {
+  render() {
     const { alerts } = this.props
     return (
-      <div>
-        <button onClick={() => window.alert(alerts.m1)}>Módulo 1</button>
-        <button onClick={() => window.alert(alerts.m2)}>Módulo 2</button>
-      </div>
+      <DivButtons>
+        <Buttons onClick={() => window.alert(alerts.m1)}>Módulo 1</Buttons>
+        <Buttons onClick={() => window.alert(alerts.m2)}>Módulo 2</Buttons>
+      </DivButtons>
     )
   }
 }
 
-// Esto lo exportamos para los tests
 export { DivButtons, Buttons }
