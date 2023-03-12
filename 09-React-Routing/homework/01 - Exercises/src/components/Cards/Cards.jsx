@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "../Card/Card";
-import styleCards from "./Cards.module.css";
+import React from 'react'
+import Card from '../Card/Card'
+import styleCards from './Cards.module.css'
 
 export default function Cards({ cruise }) {
   if (cruise) {
@@ -18,8 +18,8 @@ export default function Cards({ cruise }) {
           />
         ))}
       </div>
-    );
+    )
   } else {
-    <div>No hay crucero</div>;
+    ;<div>No hay crucero</div>
   }
 }

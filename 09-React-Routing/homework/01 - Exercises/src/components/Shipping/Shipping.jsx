@@ -1,5 +1,5 @@
-import React from "react";
-import style from "./Shipping.module.css";
+import React from 'react'
+import style from './Shipping.module.css'
 
 export default function Shipping() {
   return (
@@ -43,5 +43,5 @@ export default function Shipping() {
         </li>
       </ul>
     </div>
-  );
+  )
 }
